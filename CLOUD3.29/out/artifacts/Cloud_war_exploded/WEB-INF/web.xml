@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+        <!--設置首頁-->
+        <welcome-file-list>
+            <welcome-file>login.jsp</welcome-file>
+        </welcome-file-list>
+
+        <!--Timer監聽-->
+        <listener>
+            <listener-class>Timer.Listener</listener-class>
+        </listener>
+
+        <servlet>
+            <servlet-name>IndexServlet</servlet-name>
+            <servlet-class>Servlet.IndexServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>IndexServlet</servlet-name>
+            <url-pattern>/index</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>ImageInfo</servlet-name>
+            <servlet-class>Servlet.ImageInfo</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ImageInfo</servlet-name>
+            <url-pattern>/imageInfo</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>ServerInfoServlet</servlet-name>
+            <servlet-class>Servlet.ServerInfoServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ServerInfoServlet</servlet-name>
+            <url-pattern>/serverInfoServlet</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>ServerOverviewServlet</servlet-name>
+            <servlet-class>Servlet.ServerOverviewServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ServerOverviewServlet</servlet-name>
+            <url-pattern>/serverOverviewServlet</url-pattern>
+        </servlet-mapping>
+    
+        <servlet>
+            <servlet-name>ApiServlet</servlet-name>
+            <servlet-class>Servlet.ApiServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ApiServlet</servlet-name>
+            <url-pattern>/api</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>ServerOverviewInfoServlet</servlet-name>
+            <servlet-class>Servlet.ServerOverviewInfoServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ServerOverviewInfoServlet</servlet-name>
+            <url-pattern>/serverOverviewInfoServlet</url-pattern>
+        </servlet-mapping>
+
+    <servlet>
+        <servlet-name>VideoTranscodeIndexServlet</servlet-name>
+        <servlet-class>Servlet.VideoTranscodeIndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VideoTranscodeIndexServlet</servlet-name>
+        <url-pattern>/videoTranscodeIndexServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ISListServlet</servlet-name>
+        <servlet-class>Servlet.ISListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ISListServlet</servlet-name>
+        <url-pattern>/iSListServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>VideoSetThresholdServlet</servlet-name>
+        <servlet-class>Servlet.VideoSetThresholdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VideoSetThresholdServlet</servlet-name>
+        <url-pattern>/videoSetThresholdServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DataSetThresholdServlet</servlet-name>
+        <servlet-class>Servlet.DataSetThresholdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DataSetThresholdServlet</servlet-name>
+        <url-pattern>/dataSetThresholdServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
